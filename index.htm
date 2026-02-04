@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glint Wares and Fabrics</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #ff69b4;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            color: #333;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .about-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 40px auto;
+            max-width: 800px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .modal-content {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Glint Wares and Fabrics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slideshow Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.legit.ng/images/1200x675/4ee3901c6664c994.jpeg?v=1" class="d-block w-100" alt="Nigerian Native Wear 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.legit.ng/images/1120/7dda710cf68c2b3e.jpeg?v=1" class="d-block w-100" alt="Nigerian Native Wear 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.ytimg.com/vi/1JNc3JHeVqQ/sddefault.jpg" class="d-block w-100" alt="Nigerian Native Wear 3">
+            </div>
+            <div class="carousel-item">
+                <img src="https://c8.alamy.com/comp/2A7B43F/kalabari-ladies-of-rivers-state-displaying-the-rich-culture-of-nigeria-during-the-national-festival-for-arts-and-culture-nafest-in-edo-state-2A7B43F.jpg" class="d-block w-100" alt="Nigerian Native Wear 4">
+            </div>
+            <div class="carousel-item">
+                <img src="https://clickamericana.com/wp-content/uploads/Antique-womens-fashion-from-1890-See-the-clothes-Victorian-ladies-were-wearing-for-winter-770x493.jpg" class="d-block w-100" alt="English Style Wear 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://assets.vogue.com/photos/67891ead87b0c1eec7abca20/master/w_2560%2Cc_limit/image.png" class="d-block w-100" alt="English Style Wear 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.mos.cms.futurecdn.net/e8Lvg5qYs3WPLrTsrp6xME.jpg" class="d-block w-100" alt="English Style Wear 3">
+            </div>
+            <div class="carousel-item">
+                <img src="https://static.independent.co.uk/2025/09/23/7/56/clothing-brands.png?width=1200" class="d-block w-100" alt="English Style Wear 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Nigerian Native Wares Section -->
+    <div class="container">
+        <h2 class="section-title">Nigerian Native Lady Wares</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://cdn.legit.ng/images/1200x675/4ee3901c6664c994.jpeg?v=1" class="card-img-top" alt="Native Wear 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Beautiful Native Dress</h5>
+                        <p class="card-text">Traditional Nigerian attire for women.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://cdn.legit.ng/images/1120/7dda710cf68c2b3e.jpeg?v=1" class="card-img-top" alt="Native Wear 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Native Gown</h5>
+                        <p class="card-text">Stylish and colorful designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/1JNc3JHeVqQ/sddefault.jpg" class="card-img-top" alt="Native Wear 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Velvet Traditional Outfit</h5>
+                        <p class="card-text">Igbo style fashion.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://c8.alamy.com/comp/2A7B43F/kalabari-ladies-of-rivers-state-displaying-the-rich-culture-of-nigeria-during-the-national-festival-for-arts-and-culture-nafest-in-edo-state-2A7B43F.jpg" class="card-img-top" alt="Native Wear 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Kalabari Dress</h5>
+                        <p class="card-text">Rich cultural attire.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- English Female Wares Section -->
+    <div class="container">
+        <h2 class="section-title">Ready-Made English Female Wares</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://clickamericana.com/wp-content/uploads/Antique-womens-fashion-from-1890-See-the-clothes-Victorian-ladies-were-wearing-for-winter-770x493.jpg" class="card-img-top" alt="English Wear 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Victorian Fashion</h5>
+                        <p class="card-text">Classic English styles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://assets.vogue.com/photos/67891ead87b0c1eec7abca20/master/w_2560%2Cc_limit/image.png" class="card-img-top" alt="English Wear 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Wardrobe Essentials</h5>
+                        <p class="card-text">Contemporary ready-made clothes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://cdn.mos.cms.futurecdn.net/e8Lvg5qYs3WPLrTsrp6xME.jpg" class="card-img-top" alt="English Wear 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Fashion Editor Picks</h5>
+                        <p class="card-text">Stylish outfits for women.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://static.independent.co.uk/2025/09/23/7/56/clothing-brands.png?width=1200" class="card-img-top" alt="English Wear 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Online Brands</h5>
+                        <p class="card-text">Trendy ready-made fashion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about-section">
+        <h2 class="section-title">About Us</h2>
+        <p>Welcome to Glint Wares and Fabrics, your one-stop shop for exquisite Nigerian native lady wares and ready-made English female wares. We blend tradition with modernity to bring you the best in fashion.</p>
+        <p>Contact us:</p>
+        <ul>
+            <li>Phone: 08140997928</li>
+            <li>Email: julietomote@gmail.com</li>
+            <li>WhatsApp: +2348140997928</li>
+        </ul>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Glint Wares and Fabrics. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS for form handling (placeholder) -->
+    <script>
+        // Placeholder for form submission (e.g., console log)
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                console.log('Form submitted');
+                // You can add actual functionality here
+            });
+        });
+    </script>
+</body>
+</html>
